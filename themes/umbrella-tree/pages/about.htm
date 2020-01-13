@@ -23,11 +23,13 @@ is_hidden = 0
     currentPage=currentPage %}
     {# CONTENT 2 END #}
 
-    {# PROCESS START #}
-    {% content "about/process.htm" 
-    imageUrl=assetsLink 
-    currentPage=currentPage %}
-    {# PROCESS END #}
+    <section class="about__process">
+        <div class="__container">
+            <figure>
+                <img src="{{assetsLink}}/secondary/process.jpg" alt="">
+            </figure>
+        </div>
+    </section>
 
     {# DOWNLOAD-LINK START #}
     {% content "about/download-links.htm" 

@@ -21,6 +21,7 @@ $fonts: (main: 'Alata',
 ;
 
 // PRESET
+
 .secondary-herobanner {
     width: 100%;
     background-size: cover;
@@ -54,7 +55,7 @@ $fonts: (main: 'Alata',
 
 .secondary-herobanner:before {
     content: "";
-    background: rgba(31, 114, 45, 0.8);
+    background:  #189b81b0;;
     position: absolute;
     height: 100%;
     width: 100%;
@@ -69,6 +70,21 @@ $fonts: (main: 'Alata',
     line-height: 55px;
     color: #333333;
 }
+
+// NAVIGATION -- SECONDARY 
+.header__navigation {
+    position: relative;
+    nav {
+        ul {
+            li {
+                a {
+                    color: #333;
+                }
+            }
+        }
+    }
+}
+
 
 
 
@@ -102,7 +118,7 @@ $fonts: (main: 'Alata',
 
     .about__servicelist {
         display: grid;
-        grid-template-columns: auto auto auto;
+        grid-template-columns: repeat(auto-fill,minmax(300px,auto));
         gap: 80px;
 
         .about__servicelist-item {
@@ -132,7 +148,14 @@ $fonts: (main: 'Alata',
 }
 
 .about__process {
-    padding: 50px 0 80px;
+    padding: 50px 0px;
+    .__container {
+        figure {
+            img {
+                width: 100%;
+            }
+        }
+    }
 }
 
 .section__secondary-cta {
@@ -181,7 +204,7 @@ $fonts: (main: 'Alata',
 
         .links-itemlist {
             display: grid;
-            grid-template-columns: auto auto auto;
+            grid-template-columns: repeat(auto-fill,minmax(300px,auto));
             gap: 50px;
 
             .links-item {

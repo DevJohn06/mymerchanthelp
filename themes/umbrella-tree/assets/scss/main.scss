@@ -3,7 +3,7 @@ $colors: (primary: #26437F,
     c-content: #333,
     c-title: #656565,
     primary-hover: rgb(58, 94, 165),
-    secondary-hover: rgb(58, 94, 165));
+    secondary-hover: #278673);
 
 $fonts: (main: 'Alata',
     secondary: 'Raleway'
@@ -72,7 +72,7 @@ ul {
 }
 
 .__container {
-    max-width: 1550px;
+    max-width: 1280px;
     width: 100%;
     margin: 0 auto;
 }
@@ -80,16 +80,16 @@ ul {
 .__title {
     font-style: normal;
     font-weight: bold;
-    font-size: 50px;
+    font-size: 40px;
     line-height: 62px;
-    color: color(primary);
+    color: color(secondary);
 }
 
 .__content-text {
     font-family: font(secondary);
     font-style: normal;
     font-weight: normal;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 45px;
     color: #333333;
     padding-top: 20px;
@@ -148,7 +148,7 @@ $nav-height: 3em;
 }
 
 .navbar-fixed {
-    position: fixed;
+    position: fixed !important;
     top: -($nav-height);
     padding: 5px 0 !important;
     background: #fff !important;
@@ -163,7 +163,7 @@ $nav-height: 3em;
             }
         }
     }
-  
+
 
     .logo-container {
         img {
@@ -261,7 +261,7 @@ $nav-height: 3em;
                 text-shadow: 3px 11px 15px rgba(255, 255, 255, 0.7);
                 color: #fff;
                 text-decoration: none;
-
+                font-size: 18px;
                 &:hover,
                 &:active {
                     color: color(secondary);
@@ -362,89 +362,49 @@ $nav-height: 3em;
     }
 }
 
-// SERVICES STYLES START
-.section__services {
-    padding: 85px 0;
+// CONTENT ONE 
 
-    .services-container {
+.content-one {
+    padding: 80px 0;
+
+    .__container {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(350px, auto));
-        gap: 90px;
-        justify-items: center;
-    }
+        grid-template-rows: auto;
+        gap: 80px;
 
-    .service-item {
+        .content-one__article {
+            display: grid;
+            grid-template-columns: auto auto;
+            gap: 80px;
 
-        .service-icon {
-            img {
-                width: 150px;
+            figure {
+                img {
+                    display: block;
+                    width: 100%;
+                    object-fit: cover;
+                }
+            }
+
+            .write-up {
+                display: grid;
+                grid-template-rows: auto auto;
+
+                .button__standard {
+                    align-self: end;
+                }
             }
         }
 
-        .button__standard {
-            margin: 10px 0;
-            text-decoration: none;
-        }
-
-        .service-image {
-            position: relative;
-            width: 100%;
-            height: 350px;
-            padding-bottom: 20px;
-
-            img {
-                width: 100%;
-                height: 100%;
-                object-fit: cover;
+        .content-one__article--reverse {
+            figure {
+                grid-column: 2;
+                grid-row: 1;
             }
-        }
 
-        button.close {
-            position: relative;
-            z-index: 99;
-        }
-
-        .close {
-            opacity: 0.5;
-            font-size: 35px;
-        }
-    }
-
-    .__title {
-        text-align: center;
-        padding-bottom: 80px;
-    }
-
-    .service-title {
-        color: color(primary);
-        font-style: normal;
-        font-weight: 600;
-        font-size: 25px;
-        line-height: 30px;
-        padding: 25px 0 15px 0;
-    }
-
-    .modal-service-title {
-        padding: 35px 0 15px 0;
-    }
-
-    .service-content {
-        font-style: normal;
-        font-weight: 400;
-        font-size: 18px;
-        line-height: 27px;
-    }
-
-    .button__standard {
-        margin: 40px auto;
-    }
-
-}
-
-@media (min-width: 768px) {
-    .section__services {
-        .modal-dialog {
-            width: 1000px;
+            div {
+                grid-column: 1;
+                grid-row: 1;
+            }
         }
     }
 }
@@ -459,7 +419,7 @@ $nav-height: 3em;
 
     &:before {
         content: "";
-        background: rgba(40, 73, 42, 0.8);
+        background: #189b81b0;
         background-position: top;
         width: 100%;
         height: 100%;
@@ -502,13 +462,8 @@ $nav-height: 3em;
             grid-template-columns: 1fr 1fr;
             gap: 85px;
 
-            .section__title {
-                font-style: normal;
-                font-weight: bold;
-                font-size: 45px;
-                line-height: normal;
-                text-transform: none;
-                color: color(primary);
+            .__title {
+                font-size: 55px;
             }
 
             .contact__deets {
@@ -610,7 +565,7 @@ $nav-height: 3em;
 
 footer {
     .top-footer {
-        background: color(primary);
+        background: color(c-content);
         padding: 30px 0;
 
         .__container {
