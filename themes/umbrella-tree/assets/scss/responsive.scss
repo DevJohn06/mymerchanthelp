@@ -1,3 +1,25 @@
+$colors: (primary: #26437F,
+    secondary: #16a085,
+    c-content: #333,
+    c-title: #656565,
+    primary-hover: rgb(58, 94, 165),
+    secondary-hover: #278673);
+
+$fonts: (main: 'Alata',
+    secondary: 'Raleway'
+);
+
+@function color($color-name) {
+    @return map-get($colors, $color-name)
+}
+
+;
+
+@function font($font-name) {
+    @return map-get($fonts, $font-name)
+}
+
+;
 // GENERAL 
 .mobile-hidden {
     display: none;
@@ -6,6 +28,10 @@
 @media only screen and (max-width: 1580px) {
     .__container {
         padding: 0 30px;
+    }
+
+    .section__herobanner .__container {
+        padding: 200px 30px 0 30px;
     }
 }
 
@@ -71,14 +97,8 @@
 
 @media only screen and (max-width:1050px) {
     .section__herobanner {
-        &:before {
-            content: "";
-            background: rgba(31,114,45,0.8);
-            position: absolute;
+        video {
             height: 100%;
-            width: 100%;
-            top: 0;
-            left: 0;
         }
         .__container {
             grid-template-columns: 1fr;
@@ -99,8 +119,10 @@
 
 @media only screen and (max-width:950px) {
     .section__herobanner {
+        padding: 0px;
         height: 100%;
         .__container {
+            padding:50px 30px;
             article {
                 .heading__herobanner {
                     font-size: 40px;
@@ -114,13 +136,35 @@
                 }
             }
         }
+    }
 
+    .content-one {
+        padding: 50px 0;
+        .__container {
+            gap: 40px;
+            .content-one__article {
+                grid-template-columns: auto;
+                gap: 40px;
+            }
+            .content-one__article--reverse {
+                figure {
+                    grid-row: unset;
+                    grid-column: unset;
+                }
+                .write-up {
+                    grid-row: unset;
+                    grid-column: unset;
+                };
+            }
+        }
     }
 
     .section__cta {
         .__container {
+            padding: 30px;
             .cta-content {
-                font-size: 30px;
+                padding: 0px;
+                font-size: 25px;
                 line-height: initial;
             }
         }
@@ -160,14 +204,19 @@
         .__container {
             .contact__info {
                 grid-template-columns: auto;
-                gap: 0;
+                gap: 25px;
+
+                .__title {
+                    font-size: 36px;
+                    line-height: 1;
+                }
 
                 .contact__deets {
                     justify-content: start;
 
                     .contact-link--phone,
                     .contact-link--email {
-                        font-size: 35px;
+                        font-size: 30px;
                         line-height: normal;
                     }
 
@@ -330,8 +379,9 @@
 }
 
 //NAVIGATION
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width:1050px) {
     .header__navigation {
+        position: relative;
         .__container {
             grid-template-columns: auto;
 
@@ -351,10 +401,12 @@
 
                 .fa-bars {
                     font-size: 30px;
+                    color:color(secondary);
                 }
             }
 
             a {
+                color:color(secondary);
                 img {
                     width: 100%;
                     max-width: 120px;

@@ -488,9 +488,10 @@ $nav-height: 3em;
                     font-style: normal;
                     font-weight: bold;
                     font-family: font(main-font);
-                    font-size: 45px;
+                    font-size: 35px;
                     line-height: 62px;
                     color: color(c-title);
+                    word-break: break-word;
                 }
             }
         }
