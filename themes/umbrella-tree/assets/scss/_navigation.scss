@@ -16,7 +16,7 @@ $nav-height: 3em;
         ul {
             li {
                 a {
-                    color: color(c-content);
+                    color: #333;
                     text-shadow: none;
                 }
             }
@@ -95,7 +95,7 @@ $nav-height: 3em;
                         font-weight: 700;
                         font-size: 15px;
                         line-height: 40px;
-                        color: #000;
+                        color: #000 !important;
                     }
 
                     a:hover {
