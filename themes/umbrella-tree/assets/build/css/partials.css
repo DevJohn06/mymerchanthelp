@@ -109,6 +109,7 @@
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
+  color: #16a085;
 }
 
 .sidenav nav {
@@ -127,17 +128,18 @@
   padding-bottom: 20px;
 }
 
-.sidenav nav ul .a {
+.sidenav nav ul a {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-size: 20px;
+  font-family: "Alata";
+  color: #16a085 !important;
   display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
 }
 
-.sidenav nav ul .a:hover {
+.sidenav nav ul a:hover {
   color: #f1f1f1;
 }
 
@@ -156,4 +158,3 @@
     font-size: 18px;
   }
 }
-/*# sourceMappingURL=partials.css.map */

@@ -1,27 +1,3 @@
-$colors: (primary: #26437F,
-    secondary:#00b894,
-    content: #333,
-    c-title: #656565,
-    primary-hover: rgb(58, 94, 165),
-    secondary-hover: rgb(58, 94, 165));
-
-$fonts: (main: 'Alata',
-    secondary: 'Raleway'
-);
-
-@function color($color-name) {
-    @return map-get($colors, $color-name)
-}
-
-;
-
-@function font($font-name) {
-    @return map-get($fonts, $font-name)
-}
-;
-
-// PRESET
-
 .secondary-herobanner {
     width: 100%;
     background-size: cover;

@@ -12,6 +12,19 @@ description = "Home Layout"
     </style>
     {% endif %}
 
+    {% if this.page.id == 'home'%}
+    <style>
+        .header__navigation {
+            position: fixed;
+        }
+
+        .header__navigation nav ul li a {
+            color: #fff;
+        }
+    </style>
+    {% endif %}
+
+    
     <!-- Header -->
     <header id="layout-header">
         {% partial 'site/header' %}
