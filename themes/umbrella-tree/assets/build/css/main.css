@@ -276,7 +276,6 @@ ul {
 .section__herobanner {
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 0px 0px 50px;
   position: relative;
   height: 100vh;
   display: -ms-grid;
@@ -317,20 +316,22 @@ ul {
   grid-row: 1;
   -ms-grid-column: 1;
   grid-column: 1;
-  padding: 200px 0 0;
 }
 
 .section__herobanner .__container article {
   position: relative;
   z-index: 1;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 .section__herobanner .__container article .heading__herobanner {
   font-family: "Alata";
   font-style: normal;
   font-weight: bold;
-  font-size: 65px;
-  line-height: 81px;
+  font-size: 45px;
+  line-height: normal;
   color: #fff;
   text-shadow: 3px 11px 15px rgba(52, 46, 46, 0.25);
 }
@@ -339,8 +340,8 @@ ul {
   font-family: "Alata";
   font-style: normal;
   font-weight: 600;
-  font-size: 40px;
-  line-height: 56px;
+  font-size: 30px;
+  line-height: normal;
   color: #fff;
   margin: 40px 0;
   text-shadow: 3px 11px 15px rgba(52, 46, 46, 0.25);
@@ -356,7 +357,7 @@ ul {
   display: inline-block;
   padding: 15px 40px;
   text-align: center;
-  font-size: 25px;
+  font-size: 20px;
   width: unset;
   height: unset;
   font-weight: 600;
@@ -614,6 +615,7 @@ ul {
 }
 
 footer .top-footer {
+  background: #333;
   padding: 30px 0;
 }
 
@@ -671,10 +673,15 @@ footer .top-footer .__container .footer-social .footer-text {
 footer .top-footer .__container .footer-social figure {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (auto)[5];
-      grid-template-columns: repeat(5, auto);
+  -ms-grid-columns: (auto)[4];
+      grid-template-columns: repeat(4, auto);
   -webkit-column-gap: 35px;
           column-gap: 35px;
+}
+
+footer .top-footer .__container .footer-social figure img {
+  max-width: 40px;
+  width: 100%;
 }
 
 footer .bottom-footer {
@@ -811,7 +818,7 @@ footer .bottom-footer .__container .footer-copyright {
   font-weight: 700;
   font-size: 15px;
   line-height: 40px;
-  color: #000 !important;
+  color: #000;
 }
 
 .header__navigation nav li.has-dropdown .nav-dropdown li a:hover {
@@ -838,7 +845,7 @@ footer .bottom-footer .__container .footer-copyright {
 }
 
 .header__navigation nav li a:hover, .header__navigation nav li a:active {
-  color: #00b894;
+  color: #00b894 !important;
 }
 
 .header__navigation .logo-container {
@@ -846,7 +853,7 @@ footer .bottom-footer .__container .footer-copyright {
 }
 
 .header__navigation .logo-container img {
-  max-width: 200px;
+  max-width: 250px;
 }
 
 .secondary-herobanner {
@@ -903,10 +910,6 @@ footer .bottom-footer .__container .footer-copyright {
 
 .header__navigation {
   position: relative;
-}
-
-.header__navigation nav ul li a {
-  color: #333;
 }
 
 .content-one__block-one {
@@ -1004,6 +1007,15 @@ footer .bottom-footer .__container .footer-copyright {
       -ms-flex-pack: center;
           justify-content: center;
   padding-top: 20px;
+}
+
+.section__secondary-cta article div .button__standard {
+  background-color: #26437F;
+  color: #fff;
+}
+
+.section__secondary-cta article div .button__standard:hover {
+  background-color: #3a5ea5;
 }
 
 .about__download-links {
@@ -1510,7 +1522,7 @@ footer .bottom-footer .__container .footer-copyright {
   display: none;
 }
 
-@media only screen and (max-width: 1580px) {
+@media only screen and (max-width: 1350px) {
   .__container {
     padding: 0 30px;
   }
@@ -1523,9 +1535,6 @@ footer .bottom-footer .__container .footer-copyright {
   img {
     width: 100%;
   }
-}
-
-@media only screen and (max-width: 950px) {
   .section__secondary-cta {
     padding: 50px 0;
   }
@@ -1763,6 +1772,12 @@ footer .bottom-footer .__container .footer-copyright {
   }
 }
 
+@media only screen and (max-width: 1350px) {
+  .header__navigation nav ul li a {
+    color: #333;
+  }
+}
+
 @media only screen and (max-width: 1050px) {
   .header__navigation {
     position: relative;
@@ -1789,10 +1804,10 @@ footer .bottom-footer .__container .footer-copyright {
   }
   .header__navigation .logo-container .mobile-hidden .fa-bars {
     font-size: 30px;
-    color: #16a085;
+    color: #00b894;
   }
   .header__navigation .logo-container a {
-    color: #16a085;
+    color: #00b894;
   }
   .header__navigation .logo-container a img {
     width: 100%;
@@ -1976,7 +1991,7 @@ footer .bottom-footer .__container .footer-copyright {
   }
 }
 
-@media only screen and (max-width: 1580px) {
+@media only screen and (max-width: 1350px) {
   .shortTerm .shortTerm__content-one .__container .shortTerm__process .process-itemlist {
     -ms-grid-columns: (minmax(300px, auto))[auto-fit];
         grid-template-columns: repeat(auto-fit, minmax(300px, auto));

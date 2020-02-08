@@ -50,15 +50,6 @@
 // NAVIGATION -- SECONDARY 
 .header__navigation {
     position: relative;
-    nav {
-        ul {
-            li {
-                a {
-                    color: #333;
-                }
-            }
-        }
-    }
 }
 
 // ABOUT US STYLES 
@@ -151,6 +142,13 @@
             display: grid;
             justify-content: center;
             padding-top: 20px;
+            .button__standard {
+                background-color: color(primary);
+                color: #fff;
+                &:hover {
+                    background-color: color(primary-hover);
+                }
+            }
         }
     }
 }

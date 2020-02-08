@@ -1,31 +1,10 @@
-$colors: (primary: #26437F,
-    secondary: #16a085,
-    c-content: #333,
-    c-title: #656565,
-    primary-hover: rgb(58, 94, 165),
-    secondary-hover: #278673);
 
-$fonts: (main: 'Alata',
-    secondary: 'Raleway'
-);
-
-@function color($color-name) {
-    @return map-get($colors, $color-name)
-}
-
-;
-
-@function font($font-name) {
-    @return map-get($fonts, $font-name)
-}
-
-;
 // GENERAL 
 .mobile-hidden {
     display: none;
 }
 
-@media only screen and (max-width: 1580px) {
+@media only screen and (max-width: 1350px) {
     .__container {
         padding: 0 30px;
     }
@@ -39,10 +18,7 @@ $fonts: (main: 'Alata',
     img {
         width: 100%;
     }
-}
 
-// PARTIALS
-@media only screen and (max-width:950px) {
     .section__secondary-cta {
         padding: 50px 0;
 
@@ -56,6 +32,7 @@ $fonts: (main: 'Alata',
         }
     }
 }
+
 
 // HOME 
 @media only screen and (max-width:1310px) {
@@ -379,6 +356,20 @@ $fonts: (main: 'Alata',
 }
 
 //NAVIGATION
+@media only screen and (max-width: 1350px) {
+    .header__navigation { 
+        nav { 
+            ul {
+                li {
+                    a {
+                        color: #333;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media only screen and (max-width:1050px) {
     .header__navigation {
         position: relative;
@@ -670,7 +661,7 @@ $fonts: (main: 'Alata',
 
 // SHORT TERM LENDERS 
 
-@media only screen and (max-width: 1580px) {
+@media only screen and (max-width: 1350px) {
     .shortTerm {
         .shortTerm__content-one {
             .__container {

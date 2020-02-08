@@ -2,7 +2,6 @@
 .section__herobanner {
     background-repeat: no-repeat;
     background-size: cover;
-    padding: 0px 0px 50px;
     position: relative;
     height: 100vh;
     display: grid;
@@ -32,18 +31,18 @@
         grid-template-columns: 1fr 1fr;
         grid-row: 1;
         grid-column: 1;
-        padding: 200px 0 0;
 
         article {
             position: relative;
             z-index: 1;
+            align-self: center;
 
             .heading__herobanner {
                 font-family: font(main);
                 font-style: normal;
                 font-weight: bold;
-                font-size: 65px;
-                line-height: 81px;
+                font-size: 45px;
+                line-height: normal;
                 color: #fff;
                 text-shadow: 3px 11px 15px rgba(52, 46, 46, 0.25);
             }
@@ -52,8 +51,8 @@
                 font-family: font(main);
                 font-style: normal;
                 font-weight: 600;
-                font-size: 40px;
-                line-height: 56px;
+                font-size: 30px;
+                line-height: normal;
                 color: #fff;
                 margin: 40px 0;
                 text-shadow: 3px 11px 15px rgba(52, 46, 46, 0.25);
@@ -68,7 +67,7 @@
                     display: inline-block;
                     padding: 15px 40px;
                     text-align: center;
-                    font-size: 25px;
+                    font-size: 20px;
                     width: unset;
                     height: unset;
                     font-weight: 600;
@@ -282,7 +281,7 @@
 
 footer {
     .top-footer {
-        background: color(c-content);
+        background: #333;
         padding: 30px 0;
 
         .__container {
@@ -326,11 +325,15 @@ footer {
                     padding-bottom: 10px;
                 }
 
-
                 figure {
                     display: grid;
-                    grid-template-columns: repeat(5, auto);
+                    grid-template-columns: repeat(4, auto);
                     column-gap: 35px;
+
+                    img {
+                        max-width: 40px;
+                        width: 100%;
+                    }
                 }
             }
         }

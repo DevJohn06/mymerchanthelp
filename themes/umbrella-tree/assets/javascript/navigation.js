@@ -15,7 +15,6 @@ function closeNav() {
     document.getElementById("mobileNav").style.display = "none";
 }
 
-
 // Always 
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);

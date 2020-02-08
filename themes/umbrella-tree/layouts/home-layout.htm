@@ -18,8 +18,30 @@ description = "Home Layout"
             position: fixed;
         }
 
+        @media only screen and (max-width: 1350px) {
+            .header__navigation {
+                position: relative;
+            }
+
+            .header__navigation nav ul li a { 
+                color: #333;
+            }
+        }
     </style>
+
+    {%elseif this.page.id != 'home'%}
+    
+    <style> 
+        .header__navigation nav ul li a { 
+            color: #333;
+        }
+
+        
+    </style>
+
     {% endif %}
+
+    
 
     
     <!-- Header -->
