@@ -736,7 +736,7 @@ footer .bottom-footer .__container .footer-copyright {
 
 .navbar-fixed {
   position: fixed !important;
-  top: -3em;
+  top: 0px;
   padding: 5px 0 !important;
   background: #fff !important;
 }
