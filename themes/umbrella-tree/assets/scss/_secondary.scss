@@ -336,7 +336,6 @@
 
 }
 
-
 // Terms and Conditions
 .termsConditions {
     padding: 40px 0;
@@ -359,8 +358,6 @@
 
 
 // Terminals and Card Readers 
-
-
 .equipment {
     padding: 60px 0;
 
@@ -684,6 +681,17 @@
     .button__standard {
         &:last-child {
             justify-self: end;
+        }
+    }
+}
+
+
+// OTHER STUFF
+
+.__section { 
+    &.bottomText__section {
+        .__container {
+            text-align: center;
         }
     }
 }

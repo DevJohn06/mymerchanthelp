@@ -1518,6 +1518,10 @@ footer .bottom-footer .__container .footer-copyright {
       justify-self: end;
 }
 
+.__section.bottomText__section .__container {
+  text-align: center;
+}
+
 .mobile-hidden {
   display: none;
 }
