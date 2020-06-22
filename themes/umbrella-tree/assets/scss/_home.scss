@@ -96,6 +96,8 @@
             gap: 80px;
 
             figure {
+                display: grid;
+                align-items: center;
                 img {
                     display: block;
                     width: 100%;
