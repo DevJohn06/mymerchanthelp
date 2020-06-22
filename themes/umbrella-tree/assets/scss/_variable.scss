@@ -1,12 +1,12 @@
-$colors: (primary: #26437F,
-    secondary:#00b894,
+$colors: (primary: #E04A1F,
+    secondary:#E66E4C,
     content: #333,
     c-title: #656565,
-    primary-hover: rgb(58, 94, 165),
-    secondary-hover: rgb(58, 94, 165));
+    primary-hover: #DC5656,
+    secondary-hover: #C94136);
 
-$fonts: (main: 'Alata',
-    secondary: 'Raleway'
+$fonts: (main: 'Roboto',
+    secondary: 'Open Sans'
 );
 
 @function color($color-name) {

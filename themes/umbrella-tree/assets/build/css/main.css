@@ -11,7 +11,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Alata";
+  font-family: "Roboto";
   margin: 0;
 }
 
@@ -26,11 +26,11 @@ a:hover {
 }
 
 a:focus {
-  color: #26437F;
+  color: #E04A1F;
 }
 
 body {
-  font-family: "Raleway";
+  font-family: "Open Sans";
 }
 
 figure {
@@ -53,11 +53,11 @@ ul {
   font-weight: bold;
   font-size: 40px;
   line-height: 62px;
-  color: #00b894;
+  color: #E66E4C;
 }
 
 .__content-text {
-  font-family: "Raleway";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 20px;
@@ -72,7 +72,7 @@ ul {
 
 .button__standard {
   margin-top: 20px;
-  background-color: #00b894;
+  background-color: #E66E4C;
   width: 220px;
   height: 50px;
   display: -ms-grid;
@@ -89,8 +89,7 @@ ul {
   -webkit-transition: 0.5s;
   transition: 0.5s;
   color: #fff;
-  font-family: "Alata";
-  border-radius: 50px;
+  font-family: "Roboto";
 }
 
 .button__standard:focus {
@@ -98,18 +97,18 @@ ul {
 }
 
 .button__standard:hover {
-  background: #3a5ea5;
+  background: #C94136;
   cursor: pointer;
   color: #000;
 }
 
 .button__standard.button__standard--reverse {
-  background-color: #26437F;
+  background-color: #E04A1F;
   color: #fff;
 }
 
 .button__standard.button__standard--reverse:hover {
-  background-color: #3a5ea5;
+  background-color: #DC5656;
 }
 
 .to-center {
@@ -223,7 +222,7 @@ ul {
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
-  color: #00b894;
+  color: #E66E4C;
 }
 
 .sidenav nav {
@@ -246,8 +245,8 @@ ul {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 20px;
-  font-family: "Alata";
-  color: #00b894 !important;
+  font-family: "Roboto";
+  color: #E66E4C !important;
   display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
@@ -327,7 +326,7 @@ ul {
 }
 
 .section__herobanner .__container article .heading__herobanner {
-  font-family: "Alata";
+  font-family: "Roboto";
   font-style: normal;
   font-weight: bold;
   font-size: 45px;
@@ -337,7 +336,7 @@ ul {
 }
 
 .section__herobanner .__container article .subheading__herobanner {
-  font-family: "Alata";
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
   font-size: 30px;
@@ -577,14 +576,14 @@ ul {
   width: 100%;
   height: 330px;
   color: #333;
-  border: 1px solid #00b894;
+  border: 1px solid #E66E4C;
   background: #F5F5F5;
   border: 1px solid #656565;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 10px;
   padding-left: 20px;
-  font-family: "Raleway";
+  font-family: "Open Sans";
   font-style: normal;
   font-weight: normal;
   font-size: 25px;
@@ -784,11 +783,11 @@ footer .bottom-footer .__container .footer-copyright {
 }
 
 .header__navigation nav li.link-active a {
-  color: #00b894;
+  color: #E66E4C;
 }
 
 .header__navigation nav .has-dropdown.link-active a {
-  color: #00b894;
+  color: #E66E4C;
 }
 
 .header__navigation nav li.has-dropdown .nav-dropdown {
@@ -822,7 +821,7 @@ footer .bottom-footer .__container .footer-copyright {
 }
 
 .header__navigation nav li.has-dropdown .nav-dropdown li a:hover {
-  color: #00b894;
+  color: #E66E4C;
 }
 
 .header__navigation nav li.has-dropdown:hover > .nav-dropdown {
@@ -835,7 +834,7 @@ footer .bottom-footer .__container .footer-copyright {
 }
 
 .header__navigation nav li a {
-  font-family: "Alata";
+  font-family: "Roboto";
   text-transform: uppercase;
   font-weight: 600;
   text-shadow: 3px 11px 15px rgba(255, 255, 255, 0.7);
@@ -845,7 +844,7 @@ footer .bottom-footer .__container .footer-copyright {
 }
 
 .header__navigation nav li a:hover, .header__navigation nav li a:active {
-  color: #00b894 !important;
+  color: #E66E4C !important;
 }
 
 .header__navigation .logo-container {
@@ -963,7 +962,7 @@ footer .bottom-footer .__container .footer-copyright {
   font-size: 30px;
   line-height: auto;
   text-align: left;
-  color: #26437F;
+  color: #E04A1F;
   padding-bottom: 20px;
 }
 
@@ -985,7 +984,7 @@ footer .bottom-footer .__container .footer-copyright {
 }
 
 .section__secondary-cta {
-  background: #00b894;
+  background: #E66E4C;
   text-align: center;
   padding: 80px 0;
 }
@@ -997,7 +996,7 @@ footer .bottom-footer .__container .footer-copyright {
   line-height: 44px;
   text-align: center;
   color: #fff;
-  font-family: "Alata";
+  font-family: "Roboto";
 }
 
 .section__secondary-cta article div {
@@ -1010,12 +1009,12 @@ footer .bottom-footer .__container .footer-copyright {
 }
 
 .section__secondary-cta article div .button__standard {
-  background-color: #26437F;
+  background-color: #E04A1F;
   color: #fff;
 }
 
 .section__secondary-cta article div .button__standard:hover {
-  background-color: #3a5ea5;
+  background-color: #DC5656;
 }
 
 .about__download-links {
@@ -1066,7 +1065,7 @@ footer .bottom-footer .__container .footer-copyright {
   font-weight: bold;
   font-size: 40px;
   line-height: 50px;
-  color: #26437F;
+  color: #E04A1F;
   padding-bottom: 20px;
 }
 
@@ -1144,8 +1143,8 @@ footer .bottom-footer .__container .footer-copyright {
 .highRisk__supported-services .__container .supported-service-list .supported-service h6, .highRisk__supported-services .__container .supported-service-list .supported-service a {
   font-weight: bold;
   font-size: 25px;
-  color: #26437F;
-  font-family: "Alata";
+  color: #E04A1F;
+  font-family: "Roboto";
 }
 
 .highRisk__supported-services .__container .supported-service-list .supported-service a {
@@ -1153,7 +1152,7 @@ footer .bottom-footer .__container .footer-copyright {
 }
 
 .highRisk__supported-services .__container .supported-service-list .supported-service a:hover {
-  color: #3a5ea5;
+  color: #DC5656;
 }
 
 .highRisk__content-bottom figure {
@@ -1229,7 +1228,7 @@ footer .bottom-footer .__container .footer-copyright {
   font-weight: bold;
   font-size: 30px;
   line-height: normal;
-  color: #26437F;
+  color: #E04A1F;
   padding: 20px 0;
 }
 
@@ -1264,7 +1263,7 @@ footer .bottom-footer .__container .footer-copyright {
 }
 
 .equipment .equipment__products .__container .product-deets {
-  background: #00b894;
+  background: #E66E4C;
   padding: 40px;
 }
 
@@ -1291,7 +1290,7 @@ footer .bottom-footer .__container .footer-copyright {
 
 .equipment .equipment__products .__container .product-deets ul .deets-item i {
   padding: 10px 20px 0 0;
-  color: #26437F;
+  color: #E04A1F;
   font-size: 30px;
 }
 
@@ -1338,7 +1337,7 @@ footer .bottom-footer .__container .footer-copyright {
 }
 
 .cannabisIndustry .content-one .__container .__content-text strong {
-  color: #26437F;
+  color: #E04A1F;
 }
 
 .cannabisIndustry .content-two .__container .cbd-list {
@@ -1351,7 +1350,7 @@ footer .bottom-footer .__container .footer-copyright {
 }
 
 .cannabisIndustry .content-two .__container .cbd-list-item h3 {
-  color: #26437F;
+  color: #E04A1F;
   font-size: 30px;
   font-weight: 700;
   padding-bottom: 20px;
@@ -1400,7 +1399,7 @@ footer .bottom-footer .__container .footer-copyright {
 
 .shortTerm .shortTerm__content-one .__container .shortTerm__process .process-itemlist .process-item h3 {
   padding-bottom: 20px;
-  color: #26437F;
+  color: #E04A1F;
   font-size: 30px;
   font-weight: bold;
   text-transform: uppercase;
@@ -1458,7 +1457,7 @@ footer .bottom-footer .__container .footer-copyright {
 
 .shortTerm .shortTerm__cta .__container article div .button__standard {
   font-weight: bold;
-  background: #26437F;
+  background: #E04A1F;
   color: #fff;
 }
 
@@ -1503,7 +1502,7 @@ footer .bottom-footer .__container .footer-copyright {
 .shortTerm .shortTerm__service .__container article .service-itemlist .service-item h6 {
   font-size: 30px;
   font-weight: 600;
-  color: #26437F;
+  color: #E04A1F;
 }
 
 .button__container {
@@ -1808,10 +1807,10 @@ footer .bottom-footer .__container .footer-copyright {
   }
   .header__navigation .logo-container .mobile-hidden .fa-bars {
     font-size: 30px;
-    color: #00b894;
+    color: #E66E4C;
   }
   .header__navigation .logo-container a {
-    color: #00b894;
+    color: #E66E4C;
   }
   .header__navigation .logo-container a img {
     width: 100%;
