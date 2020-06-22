@@ -11,19 +11,22 @@
     &:before {
         content: "";
         position: absolute;
-        background-color: #189b802a;
+        background-color: #bd98984a;
         width: 100%;
         height: 100%;
         top: 0;
         left: 0;
     }
 
-    video {
+    figure {
+        img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;  
+        }
         width: 100%;
         grid-row: 1;
         grid-column: 1;
-        height: 100vh;
-        object-fit: cover;
     }
 
     .__container {
@@ -134,7 +137,7 @@
 
     &:before {
         content: "";
-        background: #189b81b0;
+        background: color(banner-shade);
         background-position: top;
         width: 100%;
         height: 100%;
